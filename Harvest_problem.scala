@@ -8,7 +8,6 @@ object Harvest_problem {
     var average : Float=0
     var medium : Float=0
     var total : Float=0
-    var date : Float=0
     val dayPerWeek=7
     val weekPerMonth=4
     val d=dayPerWeek*weekPerMonth
@@ -43,18 +42,17 @@ object Harvest_problem {
         if(max< harvestTable(a)(b)) {
           max=harvestTable(a)(b)
         }
-        date=date+1
       }
     }
     println("Maximum harvest amount is: "+ max)
     println("Maximum harvest amount date is: "+ date)
+
 
     for(a<-1 to weekPerMonth){
       for(b<- 1 to dayPerWeek){
         if(min> harvestTable(a)(b)) {
           min=harvestTable(a)(b)
         }
-        date=date+1
       }
     }
 
