@@ -45,7 +45,7 @@ object Harvest_problem {
       }
     }
     println("Maximum harvest amount is: "+ max)
-    println("Maximum harvest amount date is: "+ date)
+    
 
 
     for(a<-1 to weekPerMonth){
